@@ -1,0 +1,20 @@
+{
+  "phone": "Phone",
+  "birthday": "Birthday",
+  "email": "Email",
+  "location": "Location",
+  "webDev": "Web Development",
+  "wevDevDescripiton": "High-quality development of sites at the professional level.",
+  "mobileApps": "Mobile Applications",
+  "mobileAppsDescription": "Professional development of applications for iOS and Android.",
+  "education": "Education",
+  "university": "University",
+  "experience": "Experience",
+  "mySkills": "My Skills",
+  "all": "All",
+  "appls": "Applications",
+  "webDevelopment": "Web development",
+  "contact": "Contact",
+  "contacForm": "Contact Form",
+  "webAndAppDeveloper": "Web and App Developer"
+}
