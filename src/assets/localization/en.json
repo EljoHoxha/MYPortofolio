@@ -3,10 +3,6 @@
   "birthday": "Birthday",
   "email": "Email",
   "location": "Location",
-  "webDev": "Web Development",
-  "wevDevDescripiton": "High-quality development of sites at the professional level.",
-  "mobileApps": "Mobile Applications",
-  "mobileAppsDescription": "Professional development of applications for iOS and Android.",
   "education": "Education",
   "university": "University",
   "experience": "Experience",
@@ -16,5 +12,19 @@
   "webDevelopment": "Web development",
   "contact": "Contact",
   "contacForm": "Contact Form",
-  "webAndAppDeveloper": "Web and App Developer"
+  "webAndAppDeveloper": "Web and App Developer",
+  "aboutMe": {
+    "title": "About Me",
+    "description1": "I discovered my passion for programming at the age of 17, and now, at 20, I have grown into a skilled web and mobile app developer. I specialize in building dynamic, user-friendly applications that provide seamless experiences across platforms.",
+    "description2": "My expertise spans modern technologies and frameworks, including HTML, CSS, JavaScript, TypeScript, React, React Native, and Redux. I’m also proficient in tools like Bootstrap, Sass, Tailwind CSS, ShadCN, Native Base, and Tamagui, and have experience with advanced libraries like TanStack, Socket.io, and Material-UI. My journey is driven by a love for creating impactful digital solutions that bring ideas to life.",
+    "whatImDoing": "What I'm Doing",
+    "webDev": {
+      "title": "Web Development",
+      "description": "As a web developer, I focus on creating dynamic and responsive websites that offer seamless user experiences. My expertise includes building feature-rich, visually appealing interfaces using modern frameworks like React, TypeScript, and Tailwind CSS. I specialize in developing Progressive Web Applications (PWAs) that deliver native app-like performance and reliability, providing users with offline functionality, fast loading speeds, and cross-platform compatibility. My goal is to craft scalable and efficient web solutions tailored to meet the unique needs of each project."
+    },
+    "appDev": {
+      "title": "Mobile Applications",
+      "description": "In app development, I excel at designing and building high-performance mobile applications for both iOS and Android platforms. Utilizing tools like React Native, Tamagui, and NativeBase, I develop apps that are intuitive, fast, and visually stunning. My focus is on creating cross-platform solutions that deliver a consistent user experience while maximizing development efficiency. Whether it’s a small utility app or a complex mobile platform, I am passionate about turning ideas into functional and impactful applications."
+    }
+  }
 }
