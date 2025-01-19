@@ -1,4 +1,3 @@
-import MianLayout from "@/layouts/MianLayout";
 import {
   createRootRouteWithContext,
   Link,
@@ -11,11 +10,7 @@ export const Route = createRootRouteWithContext()({
 });
 
 function RootWrapper() {
-  return (
-    <MianLayout>
-      <Outlet />
-    </MianLayout>
-  );
+  return <Outlet />;
 }
 
 function notFoundComponent() {
