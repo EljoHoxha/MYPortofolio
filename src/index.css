@@ -17,10 +17,13 @@
   box-sizing: "border-box";
 }
 
-body {
+/* body {
   overflow: hidden;
-}
+} */
 
 @layer base {
   /* ScrollBar Unvisible */
+  body {
+    @apply bg-black-100;
+  }
 }
