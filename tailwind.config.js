@@ -9,11 +9,19 @@ module.exports = {
           200: "#1e1e1f",
           300: "#383838",
           400: "#2b2b2c",
+          "nav-bg": "hsla(240, 1%, 17%, 0.75)",
+          "nav-light": "hsla(0, 1%, 17%, 0.25)",
         },
         white: {
           100: "hsl(0, 0%, 100%)",
+          200: "hsl(0, 0%, 98%)",
         },
-        primary: "#FF6363",
+        primary: {
+          100: "hsl(45, 100%, 72%)",
+        },
+        gray: {
+          700: "hsla(0, 0%, 84%, 0.7)",
+        },
       },
       fontFamily: {
         body: ["Nunito"],
@@ -25,6 +33,8 @@ module.exports = {
       backgroundImage: {
         "gradient-dark":
           "linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%)",
+        "yellow-gradient":
+          "linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%))",
       },
       borderRadius: {
         "4xl": "30px",
