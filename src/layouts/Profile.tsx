@@ -16,18 +16,21 @@ import {
   ArrowUp,
 } from "@phosphor-icons/react";
 
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { Collapsible } from "@/components/ui/collapsible";
+import { CollapsibleContent } from "@radix-ui/react-collapsible";
 
 const Profile = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const mobileScreen = useMediaQuery({ query: "(max-width: 768px)" });
+
+  const isMobile = useMemo(() => mobileScreen, [mobileScreen]);
 
   return (
     <Collapsible open={isMobile ? isOpen : true} onOpenChange={setIsOpen}>
-      <div className="relative h-full flex flex-col items-center justify-between md:w-fit p-7.5 pt-12 bg-black-200 border rounded-md border-black-300 rounded-4xl">
+      <div className="relative h-full flex flex-col items-center justify-between md:w-fit p-7.5 pt-12 bg-black-200 border border-black-300 rounded-4xl">
         {/* Toggle Button */}
         {isMobile && (
           <div
@@ -42,19 +45,17 @@ const Profile = () => {
           </div>
         )}
 
-        {/* Static Content */}
         <div className="w-full md:w-fit flex flex-col items-center">
           <ProfileHead label={t("webAndAppDeveloper")} />
           <Separator className="my-3 md:my-6" />
         </div>
 
-        {/* Collapsible Animated Content */}
-        <div
-          className={`overflow-hidden transition-all duration-300 ease-in-out ${
-            isOpen ? "max-h-[500px]" : "max-h-0"
+        <CollapsibleContent
+          className={`w-full overflow-hidden flex flex-col justify-between flex-1 transition-all duration-300 ease-in-out  bg-green-400${
+            isMobile && (isOpen ? "max-h-[500px]" : "max-h-0")
           }`}
         >
-          <div className="w-full sm:flex-col flex flex-wrap md:flex-col gap-5">
+          <div className="w-full sm:flex-col flex flex-wrap lg:flex-col gap-5">
             {profileInfo.map((info, index) => (
               <ProfileInfo key={index} {...info} />
             ))}
@@ -75,7 +76,7 @@ const Profile = () => {
               </a>
             ))}
           </div>
-        </div>
+        </CollapsibleContent>
       </div>
     </Collapsible>
   );
