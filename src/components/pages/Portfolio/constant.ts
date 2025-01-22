@@ -6,8 +6,8 @@ import PoroApp from "@/assets/svg/Projects/Poro/poroClient.svg";
 
 import Portal from "@/assets/svg/Projects/motomtechPortal.svg";
 import ChamberdIn from "@/assets/svg/Projects/ChamberdIn/ChamberdIn.svg";
-import PowerOfTwoAdmin from "@/assets/svg/Projects/PowerOfTwo/admin.svg";
-import PowerOfTwoMobile from "@/assets/svg/Projects/PowerOfTwo/mobile.svg";
+import PowerOfTwoAdmin from "@/assets/svg/Projects/poweroftwo/admin.svg";
+import PowerOfTwoMobile from "@/assets/svg/Projects/poweroftwo/mobile.svg";
 import Paramount from "@/assets/svg/Projects/paramount.svg";
 import Enovate from "@/assets/svg/Projects/enov8.svg";
 import OneHome from "@/assets/svg/Projects/onHomeSolution.svg";
