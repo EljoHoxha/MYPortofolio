@@ -10,15 +10,15 @@ interface Props {
 }
 const MainLayout = ({ children, title }: Props) => {
   return (
-    <div className="flex justify-center  items-center w-screen overflow-auto min-h-screen h-full bg-black-100  md:h-svh md:overflow-hidden ">
-      <div className=" mx-4 mb-20 mt-5 max-w-2xl flex flex-col h-full overflow-scroll sm:overflow-hidden md:my-0  md:max-h-[90vh] md:flex-row md:max-w-7xl md:h-full gap-7.5 ">
+    <div className="flex justify-center  items-center  overflow-auto min-h-screen h-full bg-black-100  md:h-svh md:overflow-hidden ">
+      <div className=" mx-4 mb-20 mt-5 max-w-2xl w-full flex flex-col h-full  md:my-0  md:max-h-[90vh] md:flex-row md:max-w-7xl md:h-full gap-7.5 ">
         {/* Sidebar */}
 
         <Profile />
 
         {/* Scrollable Content */}
         <div className="w-full md:h-full  bg-black-200 rounded-4xl overflow-hidden border-black-300 border ">
-          <div className="flex flex-col w-full md:h-full md:overflow-auto md:mb-15 bg-black-200 rounded-4xl">
+          <div className="flex  flex-col w-full md:h-full md:overflow-auto md:mb-15 bg-black-200 rounded-4xl">
             <div className="hidden sticky top-0 md:right-0  md:flex justify-end items-center">
               <NavBar />
             </div>

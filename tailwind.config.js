@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        destructive: "red",
+        primary: "",
         black: {
           100: "#121212",
           200: "#1e1e1f",
@@ -36,9 +38,16 @@ module.exports = {
           "linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%)",
         "yellow-gradient":
           "linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%))",
+        "gradiet-onyx":
+          "linear-gradient( to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50% )",
+        "gradient-jet":
+          "linear-gradient( to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100% ), hsl(240, 2%, 13%)",
       },
       borderRadius: {
         "4xl": "30px",
+      },
+      boxShadow: {
+        custom: "0 16px 40px hsla(0, 0%, 0%, 0.25)",
       },
     },
   },

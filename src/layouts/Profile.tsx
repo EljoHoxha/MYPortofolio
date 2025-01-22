@@ -34,7 +34,7 @@ const Profile = () => {
         {/* Toggle Button */}
         {isMobile && (
           <div
-            className="absolute sm:hidden top-4 right-4 rounded-tr-3xl rounded-bl-3xl bg-yellow-gradient p-2 cursor-pointer"
+            className="absolute md:hidden top-4 right-4 rounded-tr-3xl rounded-bl-3xl bg-yellow-gradient p-2 cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? (
