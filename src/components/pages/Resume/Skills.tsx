@@ -48,16 +48,12 @@ const Skills = () => {
           My skills
         </h1>
         <div className="flex gap-4">
-          <a
-            href="public/cv/Achivment.pdf"
-            target="_black"
-            rel="noopener noreferrer"
-          >
+          <a href="cv/Achivment.pdf" target="_black" rel="noopener noreferrer">
             <Button>Achivment</Button>
           </a>
 
           <a
-            href="public/cv/EljoCVResume.pdf"
+            href="cv/EljoCVResume.pdf"
             target="_black"
             rel="noopener noreferrer"
           >
