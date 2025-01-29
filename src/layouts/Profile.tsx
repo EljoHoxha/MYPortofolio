@@ -12,6 +12,7 @@ import {
   FacebookLogo,
   InstagramLogo,
   GithubLogo,
+  LinkedinLogo,
   ArrowDown,
   ArrowUp,
 } from "@phosphor-icons/react";
@@ -133,12 +134,12 @@ const ProfileHead = ({ label }: { label: string }) => {
 const profileInfo = [
   {
     title: "Email",
-    description: "ehoxha23@beder.edu.al",
+    description: "eljohoxha2004@gmail.com",
     icon: EnvelopeSimple,
   },
   {
     title: "phone",
-    description: "+355 69 20 20 202",
+    description: "+355 69 22 34848",
     icon: DeviceMobile,
   },
 
@@ -166,5 +167,9 @@ const socialMedia = [
   {
     icon: GithubLogo,
     link: "http://www.github.com/eljohoxha",
+  },
+  {
+    icon: LinkedinLogo,
+    link: "https://www.linkedin.com/in/eljo-hoxha-70915b279/",
   },
 ];

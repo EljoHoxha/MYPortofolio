@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 const ProjectWrapper = ({ data }: { data: ProjectType[] }) => {
   const [projects, setProjects] = React.useState<ProjectType[]>([]);
+  const [isLoading, setIsLoading] = React.useState(false);
 
   function shuffleArray(array: ProjectType[]) {
     const shuffled = [...array]; // Create a copy to avoid mutating the original array
@@ -19,14 +20,20 @@ const ProjectWrapper = ({ data }: { data: ProjectType[] }) => {
   }
 
   useEffect(() => {
+    setIsLoading(true);
     const randomProjects = shuffleArray(data);
     setProjects(randomProjects);
+    setIsLoading(false);
   }, [data]);
 
   return (
     <div className="grid gap-4  sm:grid-cols-2 lg:grid-cols-3">
       {projects.map((project) => (
-        <ProjectCard key={project.title} project={project} />
+        <ProjectCard
+          isLoading={isLoading}
+          key={project.title}
+          project={project}
+        />
       ))}
     </div>
   );

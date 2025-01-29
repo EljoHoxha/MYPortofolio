@@ -10,7 +10,7 @@ import PowerOfTwoAdmin from "@/assets/svg/Projects/poweroftwo/admin.svg";
 import PowerOfTwoMobile from "@/assets/svg/Projects/poweroftwo/mobile.svg";
 import Paramount from "@/assets/svg/Projects/paramount.svg";
 import Enovate from "@/assets/svg/Projects/enov8.svg";
-import OneHome from "@/assets/svg/Projects/onHomeSolution.svg";
+// import OneHome from "@/assets/svg/Projects/onHomeSolution.svg";
 import KidsPod from "@/assets/svg/Projects/kidspod/kidspod.svg";
 
 export interface ProjectType {
@@ -54,11 +54,11 @@ const webProjects: ProjectType[] = [
     isWeb: true,
     img: Enovate,
   },
-  {
-    title: "One Home",
-    isWeb: true,
-    img: OneHome,
-  },
+  // {
+  //   title: "One Home",
+  //   isWeb: true,
+  //   img: OneHome,
+  // },
 ];
 
 const mobileProjects: ProjectType[] = [
