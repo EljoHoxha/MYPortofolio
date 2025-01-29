@@ -22,7 +22,22 @@
 } */
 
 @layer base {
-  /* ScrollBar Unvisible */
+  /* Hide scrollbar for Webkit-based browsers (Chrome, Safari) */
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  /* Hide scrollbar in Firefox */
+  * {
+    scrollbar-width: none;
+  }
+
+  /* Hide scrollbar in Edge */
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
   body {
     @apply bg-black-100;
   }

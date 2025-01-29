@@ -21,11 +21,11 @@ const emailSchema = z.object({
 type EmailSchemaType = z.infer<typeof emailSchema>;
 
 const Contact = () => {
-  const from = useForm<EmailSchemaType>({
+  const form = useForm<EmailSchemaType>({
     resolver: zodResolver(emailSchema),
   });
 
-  const { control, handleSubmit, reset } = from;
+  const { control, handleSubmit, reset } = form;
 
   const onSubmit = handleSubmit((data) => {
     emailjs
@@ -42,7 +42,7 @@ const Contact = () => {
       .then((result) => {
         console.log("Email sent successfully:", result.text);
         toast.success("Email sent successfully!");
-        reset(); // Reset the form after successful submission
+        reset({ name: "", email: "", message: "" }); // Reset fields properly
       })
       .catch((error) => {
         console.error("Email failed to send:", error.text);
@@ -54,7 +54,7 @@ const Contact = () => {
     <MainLayout title="Contact">
       <div className="w-full">
         <Map />
-        <Form {...from}>
+        <Form {...form}>
           <form
             onSubmit={onSubmit}
             className="flex flex-col gap-2 2xl:gap-5 mt-5 2xl:mt-10"
