@@ -43,21 +43,27 @@ const skillList: SkillType[] = [
 const Skills = () => {
   return (
     <div>
-      <div className="flex items-center justify-between">
+      <div className="flex w-full max-sm:flex-col-reverse  max-sm:gap-9 sm:flex-row sm:items-center justify-between">
         <h1 className="text-[25px] md:text-[32px] text-white-200 font-bold">
           My skills
         </h1>
-        <div className="flex gap-4">
-          <a href="cv/Achivment.pdf" target="_black" rel="noopener noreferrer">
-            <Button>Achivment</Button>
+        <div className="flex gap-4 max-sm:w-full ">
+          <a
+            href="cv/Achivment.pdf"
+            target="_black"
+            rel="noopener noreferrer"
+            className="max-sm:flex-1"
+          >
+            <Button className=" w-full">Achivment</Button>
           </a>
 
           <a
             href="cv/EljoCVResume.pdf"
             target="_black"
             rel="noopener noreferrer"
+            className="max-sm:flex-1"
           >
-            <Button>Download CV</Button>
+            <Button className="w-full">Download CV</Button>
           </a>
         </div>
       </div>
