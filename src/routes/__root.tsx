@@ -3,14 +3,19 @@ import {
   Link,
   Outlet,
 } from "@tanstack/react-router";
-
+import { Analytics } from "@vercel/analytics/react";
 export const Route = createRootRouteWithContext()({
   component: RootWrapper,
   notFoundComponent,
 });
 
 function RootWrapper() {
-  return <Outlet />;
+  return (
+    <>
+      <Outlet />
+      <Analytics />
+    </>
+  );
 }
 
 function notFoundComponent() {
