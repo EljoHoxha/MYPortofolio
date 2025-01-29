@@ -11,7 +11,7 @@ interface Props {
 const MainLayout = ({ children, title }: Props) => {
   return (
     <div className="flex justify-center  items-center  overflow-auto min-h-screen h-full bg-black-100  md:h-svh md:overflow-hidden ">
-      <div className=" mx-4 mb-20 mt-5 max-w-2xl w-full flex flex-col h-full  md:my-0  md:max-h-[90vh] md:flex-row md:max-w-7xl md:h-full gap-7.5 ">
+      <div className=" mx-4 mb-20 mt-5 max-w-2xl w-full flex flex-col h-full  md:my-0  md:max-h-[90vh] lg:flex-row md:max-w-7xl md:h-full gap-7.5 ">
         {/* Sidebar */}
 
         <Profile />

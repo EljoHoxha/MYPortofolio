@@ -25,28 +25,29 @@ const Profile = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
-  const mobileScreen = useMediaQuery({ query: "(max-width: 768px)" });
+  const mobileScreen = useMediaQuery({ query: "(max-width: 1024px)" });
+  console.log("mobileScreen", mobileScreen);
 
   const isMobile = useMemo(() => mobileScreen, [mobileScreen]);
+  console.log("isMobile", isMobile);
 
   return (
     <Collapsible open={isMobile ? isOpen : true} onOpenChange={setIsOpen}>
-      <div className="relative h-full flex flex-col items-center justify-between md:w-fit p-7.5 pt-12 bg-black-200 border border-black-300 rounded-4xl">
+      <div className="relative h-full flex flex-col items-center justify-between  p-7.5 pt-12 bg-black-200 border border-black-300 rounded-4xl">
         {/* Toggle Button */}
-        {isMobile && (
-          <div
-            className="absolute md:hidden top-4 right-4 rounded-tr-3xl rounded-bl-3xl bg-yellow-gradient p-2 cursor-pointer"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? (
-              <ArrowUp size={20} className="text-white-100" />
-            ) : (
-              <ArrowDown size={20} className="text-white-100" />
-            )}
-          </div>
-        )}
 
-        <div className="w-full md:w-fit flex flex-col items-center">
+        <div
+          className="absolute lg:hidden top-4 right-4 rounded-tr-3xl rounded-bl-3xl bg-yellow-gradient p-2 cursor-pointer"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? (
+            <ArrowUp size={20} className="text-white-100" />
+          ) : (
+            <ArrowDown size={20} className="text-white-100" />
+          )}
+        </div>
+
+        <div className="w-full lg:w-fit flex flex-col items-center">
           <ProfileHead label={t("webAndAppDeveloper")} />
           <Separator className="my-3 md:my-6" />
         </div>
@@ -56,7 +57,7 @@ const Profile = () => {
             isMobile && (isOpen ? "max-h-[500px]" : "max-h-0")
           }`}
         >
-          <div className="w-full sm:flex-col flex flex-wrap lg:flex-col gap-5">
+          <div className="w-full flex-col sm:flex-row flex flex-wrap lg:flex-col gap-5">
             {profileInfo.map((info, index) => (
               <ProfileInfo key={index} {...info} />
             ))}
@@ -112,7 +113,7 @@ const ProfileInfo = ({ title, description, icon }: ProfileInfoProps) => {
 
 const ProfileHead = ({ label }: { label: string }) => {
   return (
-    <div className="flex items-center gap-5 w-full md:gap-0 md:w-fit  md:flex-col">
+    <div className="flex items-center gap-5 w-full lg:gap-0 lg:w-fit  lg:flex-col">
       <div className="p-0 rounded-3xl bg-gradient-dark md:w-fit md:p-3 md:rounded-4xl">
         <img
           src={Avatar}
