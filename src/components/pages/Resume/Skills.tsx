@@ -25,19 +25,19 @@ interface SkillType {
 }
 
 const skillList: SkillType[] = [
-  { label: "HTML5", value: 95, icon: <FaHtml5 color="#E44D26" /> },
-  { label: "CSS", value: 90, icon: <FaCss3Alt color="#1572B6" /> },
-  { label: "SASS", value: 85, icon: <FaSass color="#CC6699" /> },
-  { label: "Bootstrap", value: 88, icon: <FaBootstrap color="#7952B3" /> },
-  { label: "JavaScript", value: 92, icon: <FaJs color="#F7DF1E" /> },
-  { label: "React", value: 90, icon: <FaReact color="#61DAFB" /> },
+  { label: "HTML5", value: 100, icon: <FaHtml5 color="#E44D26" /> },
+  { label: "CSS", value: 100, icon: <FaCss3Alt color="#1572B6" /> },
+  { label: "SASS", value: 100, icon: <FaSass color="#CC6699" /> },
+  { label: "Bootstrap", value: 100, icon: <FaBootstrap color="#7952B3" /> },
+  { label: "JavaScript", value: 95, icon: <FaJs color="#F7DF1E" /> },
+  { label: "React", value: 100, icon: <FaReact color="#61DAFB" /> },
   { label: "TypeScript", value: 85, icon: <SiTypescript color="#3178C6" /> },
-  { label: "Vue", value: 80, icon: <FaVuejs color="#4FC08D" /> },
-  { label: "Tailwind CSS", value: 87, icon: <SiTailwindcss color="#06B6D4" /> },
-  { label: "React Native", value: 85, icon: <FaReact color="#61DAFB" /> },
-  { label: "Expo", value: 80, icon: <SiExpo color="#000020" /> },
-  { label: "Firebase", value: 78, icon: <SiFirebase color="#FFCA28" /> },
-  { label: "Socket.IO", value: 75, icon: <SiSocketdotio color="#010101" /> },
+  { label: "Vue", value: 90, icon: <FaVuejs color="#4FC08D" /> },
+  { label: "Tailwind CSS", value: 100, icon: <SiTailwindcss color="#06B6D4" /> },
+  { label: "React Native", value: 100, icon: <FaReact color="#61DAFB" /> },
+  { label: "Expo", value: 95, icon: <SiExpo color="#000020" /> },
+  { label: "Firebase", value: 100, icon: <SiFirebase color="#FFCA28" /> },
+  { label: "Socket.IO", value: 95, icon: <SiSocketdotio color="#010101" /> },
 ];
 
 const Skills = () => {

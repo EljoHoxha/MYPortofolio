@@ -1,5 +1,5 @@
 import MainLayout from "@/layouts/MainLayout";
-import Map from "./Map";
+// import Map from "./Map";
 import { Form, FormField } from "@/components/ui/form";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -53,7 +53,7 @@ const Contact = () => {
   return (
     <MainLayout title="Contact">
       <div className="w-full">
-        <Map />
+        {/* <Map /> */}
         <Form {...form}>
           <form
             onSubmit={onSubmit}
