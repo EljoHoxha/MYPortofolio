@@ -20,10 +20,12 @@ const About = () => {
     },
   ];
 
+  const currentAge = new Date().getFullYear() - 2004;
+
   return (
     <MainLayout title={t("aboutMe.title")}>
       <p className="text-sm md:text-[15px] text-gray-light font-light mb-3">
-        {t("aboutMe.description1")}
+        I discovered my passion for programming at the age of 17, and now, at {currentAge}, I have grown into a skilled web and mobile app developer. I specialize in building dynamic, user-friendly applications that provide seamless experiences across platforms.
       </p>
       <p className="text-sm md:text-[15px] text-gray-light font-light">
         {t("aboutMe.description2")}

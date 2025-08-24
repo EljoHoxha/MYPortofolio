@@ -31,7 +31,7 @@ const skillList: SkillType[] = [
   { label: "Bootstrap", value: 100, icon: <FaBootstrap color="#7952B3" /> },
   { label: "JavaScript", value: 95, icon: <FaJs color="#F7DF1E" /> },
   { label: "React", value: 100, icon: <FaReact color="#61DAFB" /> },
-  { label: "TypeScript", value: 85, icon: <SiTypescript color="#3178C6" /> },
+  { label: "TypeScript", value: 90, icon: <SiTypescript color="#3178C6" /> },
   { label: "Vue", value: 90, icon: <FaVuejs color="#4FC08D" /> },
   { label: "Tailwind CSS", value: 100, icon: <SiTailwindcss color="#06B6D4" /> },
   { label: "React Native", value: 100, icon: <FaReact color="#61DAFB" /> },
@@ -57,14 +57,14 @@ const Skills = () => {
             <Button className=" w-full">Achivment</Button>
           </a>
 
-          <a
+          {/* <a
             href="cv/EljoCVResume.pdf"
             target="_black"
             rel="noopener noreferrer"
             className="max-sm:flex-1"
           >
             <Button className="w-full">Download CV</Button>
-          </a>
+          </a> */}
         </div>
       </div>
 
