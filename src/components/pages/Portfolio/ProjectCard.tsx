@@ -21,7 +21,7 @@ const ProjectCard = ({ project, isLoading }: Props) => {
         <img
           src={img}
           alt={title}
-          className="md:max-w-[300px] w-full h-[150px] object-cover rounded-xl"
+          className="md:max-w-[300px] w-full h-[150px] object-cover rounded-xl z-0"
           onLoad={() => setLoaded(true)}
 
         />
